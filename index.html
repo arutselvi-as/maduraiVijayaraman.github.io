@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Madurai Vijayaraman Sorpozhivugal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        padding: 15px;
+        background-color: #eff156;
+      }
+      ul {
+        list-style-type: none;
+        padding: 5px;
+        display: flex;
+        margin: 0;
+      }
+      li {
+        margin-right: 10px;
+        cursor: pointer;
+        flex-grow: 1;
+        text-align: center;
+      }
+      .image-content {
+      
+        display: none;
+        margin-top: 10px;
+      }
+      .image-container {
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 100px;
+      }
+      
+      footer {
+  background-color: #270430;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+      @media only screen and (min-width: 768px) {
+        ul {
+          flex-wrap: nowrap;
+        }
+        li {
+          width: 25%;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        li {
+          width: 20%;
+        }
+      }
+      @media only screen and (min-width: 1200px) {
+        li {
+          width: 16.66%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Madurai Vijayaraman Sorpozhivugal</h1>
+    </header>
+    <ul id="menu" style="background-color: rgb(226, 153, 245);">
+      <li onclick="displayImage('image1')">CHANNEL 1</li>
+      <li onclick="displayImage('image2')">CHANNEL 2</li>
+      <li onclick="displayImage('image3')">CHANNEL 3</li>
+      <li onclick="displayImage('image4')">CHANNEL 4</li>
+    </ul>
+    <div id="image-content">
+      <div id="image1" class="image-content image-container" >
+        <img src="./image1.jpeg" alt="Image 1" width="50%" />
+        <a href="https://www.youtube.com/@user-cu4qx5rx1i" target="_blank">View More</a>
+      </div>
+      <div id="image2" class="image-content image-container">
+        <img src="./image2.jpeg" alt="Image 2" width="50%" />
+        <a href="https://youtu.be/mbTMbafM7Ok?si=IZ17NLIiO1SYBUmR" target="_blank">View More</a>
+      </div>
+      <div id="image3" class="image-content image-container">
+        <img src="./image3.jpeg" alt="Image 3" width="50%" />
+        <a href="https://youtube.com/playlist?list=PLPr8V9esW9AEqhSPjjqW2K2uNO9GQY8Mn&si=t_BhLj2Mel1N48tP" target="_blank">View More</a>
+      </div>
+      <div id="image4" class="image-content image-container">
+        <img src="./image2.jpeg" alt="Image 4" width="50%" />
+        <a href="https://youtube.com/playlist?list=PL9l_qC3_wI0A5rel9j2bz3NiaIfZ2aoIL&si=GWkUCpSqxqoticEw" target="_blank">View More</a>
+      </div>
+    </div>
+    <script>
+      function displayImage(imageId) {
+        var imageContents = document.getElementsByClassName('image-content');
+        for (var i = 0; i < imageContents.length; i++) {
+          imageContents[i].style.display = 'none';
+        }
+        document.getElementById(imageId).style.display = 'block';
+      }
+    </script>
+    <footer style="text-align: center;">
+  <p>ELLA UYIRGALUM INBUTRU VAAZHGA</p>
+<p>SEYAL ANAITHUM ARUL OLIYAL KAANHA<p>
+</footer>
+
+  </body>
+</html>
